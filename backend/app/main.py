@@ -13,3 +13,8 @@ app.include_router(expenses.router)
 @app.get("/api/health")
 def health_check():
     return {"status": "ok"}
+
+
+@app.get("/api/ping")
+def ping():
+    return {"ping": "pong"}
