@@ -1,10 +1,10 @@
 # REQUIREMENTS.md — Expense Tracker
 
 ## Phase 1: Foundation
-- [ ] Backend scaffold (FastAPI project structure, database connection, health endpoint)
-- [ ] Frontend scaffold (Vite + React, routing, placeholder pages)
-- [ ] `/api/ping` health check endpoint
-- [ ] Custom `/add-endpoint` skill
+- [x] Backend scaffold (FastAPI project structure, database connection, health endpoint)
+- [x] Frontend scaffold (Vite + React, routing, placeholder pages)
+- [x] `/api/ping` health check endpoint
+- [x] Custom `/add-endpoint` skill
 
 ## Phase 2: Backend Core
 - [ ] Expense model (amount, category, description, transaction_date)

@@ -46,5 +46,18 @@ expense-tracker/
 - Frontend: `cd frontend && npm install && npm run dev`
 - API docs: http://localhost:8000/docs (auto-generated Swagger)
 
+## Backend Patterns (established Phase 1)
+- Router files in `backend/app/routers/` — one per resource
+- Each router uses `APIRouter(prefix="/api/v1/<resource>", tags=["<resource>"])`
+- Pydantic schemas: `<Resource>Create`, `<Resource>Update`, `<Resource>Response`
+- DB sessions via `Depends(get_db)`
+- HTTP status codes: 201 (create), 204 (delete), 404 (not found)
+
+## Frontend Patterns (established Phase 1)
+- Pages in `frontend/src/pages/` — one per route
+- API client in `frontend/src/api/client.js` — centralized fetch wrapper
+- React Router for navigation
+- Forms use controlled components with useState
+
 ## Current Phase
-Phase 0 — Setup complete. Ready for Phase 1 (Foundation).
+Phase 1 — Foundation complete. Ready for Phase 2 (Backend Core).
